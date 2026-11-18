@@ -15,17 +15,17 @@ function Hud() {
         <div className="emblem title" aria-label="Level 7">7</div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
-            <span className="title" style={{ fontSize: 16 }}>CS Quest: Adept of the Elements</span>
+            <span className="title" style={{ fontSize: 16 }}>Journey to Ba Sing CS</span>
             <span style={{ fontSize: 14, opacity: 0.9 }}>1,340 / 1,800 XP</span>
           </div>
           <div className="xp-track">
-            <div className="sky-rider" style={{ left: '74%' }}>
+            <div className="sky-rider" style={{ left: '30%' }}>
               <span className="puffs" aria-hidden="true"><i /><i /><i /></span>
               <div className="sky-bob"><Rider /></div>
             </div>
             <span className="xp-flag"><Flag /></span>
-            <div className="xp-bar" role="progressbar" aria-valuenow={74} aria-valuemin={0} aria-valuemax={100} aria-label="XP to next level">
-              <div className="xp-fill" style={{ width: '74%' }} />
+            <div className="xp-bar" role="progressbar" aria-valuenow={30} aria-valuemin={0} aria-valuemax={100} aria-label="XP to next level">
+              <div className="xp-fill" style={{ width: '30%' }} />
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ function WisdomScroll({ open, onToggle }) {
     <button className="btn scroll" onClick={onToggle} aria-expanded={open}>
       <span style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
         <Scroll />
-        <span className="title" style={{ fontSize: 14, color: '#6b3f14' }}>SCROLL OF WISDOM</span>
+        <span className="title" style={{ fontSize: 14, color: '#6b3f14' }}>WAN SHI TONG'S LIBRARY</span>
       </span>
       <span className="title" style={{ fontSize: 18, lineHeight: 1.35 }}>{open ? funFact.revealedTitle : funFact.title}</span>
       <span style={{ fontSize: 16, lineHeight: 1.55 }}>{open ? funFact.revealed : funFact.teaser}</span>
@@ -190,7 +190,7 @@ function SpiritBoss() {
     <section className="boss">
       <Spirit />
       <div style={{ flex: '1 1 220px', minWidth: 0 }}>
-        <div className="title" style={{ fontSize: 15, color: '#8fd0e8', marginBottom: 8 }}>WEEKLY SPIRIT: THE OFF-BY-ONE</div>
+        <div className="title" style={{ fontSize: 15, color: '#8fd0e8', marginBottom: 8 }}>SPIRIT WORLD</div>
         <div style={{ fontSize: 15, marginBottom: 12 }}>Appears Sunday. A timed mix of your weakest skills.</div>
         <div className="bar" style={{ background: 'rgba(0,0,0,.35)', borderColor: 'rgba(230,246,251,.5)' }}>
           <div className="bar-fill" style={{ width: '100%', background: 'linear-gradient(90deg,#8fd0e8,#2a7fa8)' }} />
